@@ -7,7 +7,7 @@ import { selectIsContactsEmpty, selectError } from 'redux/contacts/selectors';
 import { fetchContacts } from 'redux/contacts/operations';
 
 
-export const PhoneBookPage = () => {
+const Contacts = () => {
   const dispatch = useDispatch();
   const isContactsEmpty = useSelector(selectIsContactsEmpty);
   const Error = useSelector(selectError);
@@ -21,15 +21,16 @@ export const PhoneBookPage = () => {
   }
 
   return (
-    <div className="wrapper">
-      <h1>Phonebook</h1>
+    <div className="wrapper">     
       <ContactForm />
       <h2>Contacts</h2>
       <Filter />
-      {isContactsEmpty ? (
+      {isContactsEmpty ? (        
         <h2>Contactbook is empty, please add your first contact!</h2>
       ) : (
         <ContactList />  )}    
     </div>
   );
 };
+
+export default Contacts;
