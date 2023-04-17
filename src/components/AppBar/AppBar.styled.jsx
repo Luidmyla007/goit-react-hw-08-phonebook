@@ -24,7 +24,7 @@ export const Header = styled.header`
     color: #000000;
     font-weight: 400;
     font-size: 20px;
-    padding: 8px;
+   padding: 5px 20px;
     margin-right: 30px;
     transition: border-radius 0.2s ease, background 0.2s ease, color 0.2s ease,
       box-shadow 0.2s ease;
@@ -33,7 +33,7 @@ export const Header = styled.header`
   & a.active {
     font-weight: 500;
     font-size: 20px;
-    padding: 8px;
+   padding: 5px 20px;
     color: #000000;
     border-radius: 5px;
     background: rgb(17, 79, 171);
