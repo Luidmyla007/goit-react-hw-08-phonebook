@@ -5,13 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+background: radial-gradient(circle at 47.25% 52.31%, #e4dfdf 0, #cfd1d2 25%, #b7c2c3 50%, #9fb3b5 75%, #8ba5aa 100%);
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 
 h1,
 h2,
@@ -38,3 +39,8 @@ ul {
 a{
   text-decoration: none;
 }
+
+ img {
+   max-width: 100%;
+   display: block;
+ }
