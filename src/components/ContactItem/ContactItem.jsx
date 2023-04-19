@@ -6,11 +6,10 @@ import { deleteContact } from 'redux/contacts/operations';
 
 export const ContactItem = ({ id, name, number }) => {
     const dispatch = useDispatch();
-    const handDelete = () => dispatch(deleteContact(id));
     return (
         <ListItem  key={id}>
             <span>{name}: {number}</span>
-            <button  type="button" onClick={handDelete}>Delete</button>
+            <button  type="button" onClick={() => dispatch(deleteContact(id))}>Delete</button>
         </ListItem>
     );
 };

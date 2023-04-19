@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
+import { selectFilterValue } from 'redux/contacts/selectors';
 import { ContactItem } from "components/ContactItem/ContactItem";
-import { selectFilterValue } from 'redux/filter/selectors';
 
 export const ContactList = () => {  
-  const contacts = useSelector(selectFilterValue); 
+  const contacts = useSelector(selectFilterValue);
   
   return (   
     <ul>
