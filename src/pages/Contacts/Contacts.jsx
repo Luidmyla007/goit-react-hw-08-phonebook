@@ -5,9 +5,8 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectIsContactsEmpty } from 'redux/contacts/selectors';
 import { fetchContacts } from 'redux/contacts/operations';
-// import { Helmet } from 'react-helmet';
 
-export const PhoneBookPage = () => {
+const Contacts = () => {
   const dispatch = useDispatch();
   const isContactsEmpty = useSelector(selectIsContactsEmpty);
 
@@ -20,10 +19,12 @@ export const PhoneBookPage = () => {
       <ContactForm />   
       <h2>Contacts</h2>  
       <Filter />
-      {isContactsEmpty ? (
+      {isContactsEmpty ? (        
         <h2>Contactbook is empty, please add your first contact!</h2>
       ) : (
         <ContactList />  )}    
     </div>
   );
 };
+
+export default Contacts;
