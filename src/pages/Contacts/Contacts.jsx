@@ -5,8 +5,6 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectIsContactsEmpty } from 'redux/contacts/selectors';
 import { fetchContacts } from 'redux/contacts/operations';
-// import { Helmet } from 'react-helmet';
-
 
 export const PhoneBookPage = () => {
   const dispatch = useDispatch();
