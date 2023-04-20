@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
-import { LogForm, LoginTitle, FormContainer } from './LoginForm.styled';
+import LoginGif from '../../gifs/MeG.gif';
+import { LogForm, LoginTitle, FormContainer, LoginFormWrapper, LoginImg } from './LoginForm.styled';
 
 
 export const LoginForm = () => {
@@ -18,11 +19,11 @@ export const LoginForm = () => {
     form.reset();
   };
 
-  return (
+  return (<LoginFormWrapper>    
+            <LoginImg alt="animation"  srcSet={LoginGif}/>      
     <FormContainer>
       <LoginTitle>Authorization</LoginTitle>
-    <LogForm onSubmit={handleSubmit} autoComplete="off">
-     
+    <LogForm onSubmit={handleSubmit} autoComplete="off">     
       <label >
           Email
           <br/>
@@ -37,5 +38,6 @@ export const LoginForm = () => {
       <button type="submit">Log In</button>
     </LogForm>
     </FormContainer>
+    </LoginFormWrapper>
   );
 };

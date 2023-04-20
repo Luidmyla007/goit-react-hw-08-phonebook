@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
-import { FormContainer, RegisterTitle } from './RegisterForm.styled';
+import { FormContainer, RegisterTitle, RegisterWrapper, RegisterImg } from './RegisterForm.styled';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -19,6 +19,9 @@ export const RegisterForm = () => {
   };
 
   return (
+    <RegisterWrapper>
+      <RegisterImg  src="https://daimant.co.uk/wp-content/uploads/2020/03/unnamed.gif"
+        alt="contact us" title=""  data-ll-status="loaded"></RegisterImg>
     <FormContainer>
       <RegisterTitle>Registration</RegisterTitle><br/>
     <form  onSubmit={handleSubmit} autoComplete="off">
@@ -38,5 +41,6 @@ export const RegisterForm = () => {
       <button type="submit">Register</button>
     </form>
     </FormContainer>
+    </RegisterWrapper>
   );
 };
