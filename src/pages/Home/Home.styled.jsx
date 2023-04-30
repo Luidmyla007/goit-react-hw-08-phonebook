@@ -47,7 +47,7 @@ flex-grow: 1;
 `;
 
 export const Footer = styled.footer`
-margin-top: 36px;
+margin-top: 40px;
  padding: 24px 0;
   border-top: 1px solid black;
   display: flex;

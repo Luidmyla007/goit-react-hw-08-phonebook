@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks';
-import { TbHome } from "react-icons/tb";
-// import css from './Navigation.module.css';
+import { TbHome, TbUsers } from "react-icons/tb";
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();
@@ -12,7 +11,7 @@ export const Navigation = () => {
         Home
       </NavLink>
       {isLoggedIn && (
-        <NavLink to="/contacts">
+        <NavLink to="/contacts"><TbUsers size={16}/>
           Contacts
         </NavLink>
       )}

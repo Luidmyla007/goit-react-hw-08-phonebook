@@ -3,6 +3,7 @@ import { addContact } from "redux/contacts/operations";
 import { selectContacts } from "../../redux/contacts/selectors";
 import { FirstTitle, FormStyled } from './ContactForm.styled';
 import PropTypes from 'prop-types';
+import { TbUserPlus } from "react-icons/tb";
 
 export const ContactForm = () => {
   const dispatch = useDispatch();  
@@ -54,7 +55,7 @@ export const ContactForm = () => {
          <br />
          <br />
          <div>
-           <button type='submit'>Add contact</button>
+           <button type='submit'><TbUserPlus/>Add contact</button>
          </div>
        </div>
      </FormStyled>

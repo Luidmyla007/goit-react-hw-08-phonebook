@@ -14,8 +14,8 @@ export default function Home() {
     </HomeContainer>
      <Footer>       
           <CopyrightText>
-            Copyright
-            <TbCopyright size={16} />
+            Copyright 
+            <TbCopyright size={16} /> 
             2023 <br /> All rights reserved
           </CopyrightText>      
       </Footer>

@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { ListItem } from './ContactItem.styled';
 import { deleteContact } from 'redux/contacts/operations';
+import { TbTrash } from "react-icons/tb";
 
 
 export const ContactItem = ({ id, name, number }) => {
@@ -10,7 +11,7 @@ export const ContactItem = ({ id, name, number }) => {
     return (
         <ListItem  key={id}>
             <span>{name}: {number}</span>
-            <button  type="button" onClick={handDelete}>Delete</button>
+            <button  type="button" onClick={handDelete}><TbTrash/>Delete</button>
         </ListItem>
     );
 };
