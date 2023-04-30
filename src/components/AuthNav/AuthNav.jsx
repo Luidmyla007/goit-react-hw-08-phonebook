@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
-// import css from './AuthNav.module.css';
+import { TbChecklist, TbKey} from "react-icons/tb";
 
 export const AuthNav = () => {
   return (
     <div>
-      <NavLink  to="/register">
+      <NavLink  to="/register"><TbChecklist/>
         Register
       </NavLink>
-      <NavLink  to="/login">
+      <NavLink  to="/login"><TbKey/>
         Log In
       </NavLink>
     </div>

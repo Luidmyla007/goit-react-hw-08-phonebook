@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks';
+import { TbHome } from "react-icons/tb";
 // import css from './Navigation.module.css';
 
 export const Navigation = () => {
@@ -7,7 +8,7 @@ export const Navigation = () => {
 
   return (
     <nav>
-      <NavLink to="/">
+      <NavLink to="/"><TbHome/>
         Home
       </NavLink>
       {isLoggedIn && (

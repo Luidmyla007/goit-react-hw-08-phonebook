@@ -16,6 +16,7 @@
     "react-global-style": "^0.2.1",
     "react-helmet": "^6.1.0",
     "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.8.0",
     "react-lazy": "^1.1.0",
     "react-private-public-route": "^1.1.1",
     "react-providers": "^2.0.2",

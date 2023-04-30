@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
- padding: 24px 0;
-  margin-bottom: 16px;
+ padding: 34px 20px;
   border-bottom: 1px solid black;
   display: flex;
   flex-wrap: wrap;
@@ -64,5 +63,5 @@ font-weight: 400;
     font-weight: 500;
     font-size: 20px;
   }
-
 `;
+
